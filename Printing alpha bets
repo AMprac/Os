@@ -1,0 +1,21 @@
+//Write a c++ program to print alphabets in the given format :
+
+a
+b c
+d e f
+
+#include <iostream>
+using namespace std;
+int main() {
+char ch = 97 ;// Starting character
+// Outer loop for each row
+for (int i = 97; i <= 99; i++) {
+// Inner loop for printing characters in each row
+for (int j = 97; j <= i; j++) {
+cout << ch << " "; // Print the current character
+ch++; // Move to the next character
+}
+cout << endl; // Move to the next line after each row
+}
+return 0;
+}
